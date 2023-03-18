@@ -19,13 +19,12 @@ export const MultipleCustomHooks = () => {
         reset 
     } = useCounter( pokeId );
 
-    // console.log( counter );
     
     const { data, isLoading, hasError } = useFetch( `https://pokeapi.co/api/v2/pokemon/${ counter }` );     
     const { id, name, types } = !!data && data
     const  urlImg = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ id }.png`;  
     const { type } = !!types && types[0]
-       
+    
     
     return (
         <>
