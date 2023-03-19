@@ -9,12 +9,13 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
     return (
         <>
             <li className="list-group-item d-flex justify-content-between">
-                <div className="align-self-center d-flex justify-content-start">
+                <div className="align-self-center d-flex justify-content-start" >
                     <input 
                         type="checkbox"
                         onClick={ () => onToggleTodo( todo.id ) } 
+                        aria-label="input"
                     />
-                    <div className={`margin-l ${ (todo.done) ? 'text-decoration-line-through' : '' }`}>{todo.description}</div>
+                    <div aria-label="nombreTodo" className={`margin-l ${ (todo.done) ? 'text-decoration-line-through' : '' }`}>{todo.description}</div>
                 </div>
                 <button 
                     className="btn btn-outline-danger"
