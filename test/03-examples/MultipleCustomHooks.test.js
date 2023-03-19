@@ -94,8 +94,7 @@ describe("Prueba en el < MultipleCustomHook /> ", () => {
         fireEvent.click( nextButton );
 
         expect( mockIncrement ).toHaveBeenCalled();
+    });
 
-    })
 
-//
 });
