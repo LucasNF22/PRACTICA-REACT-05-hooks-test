@@ -9,7 +9,7 @@ export const LoginPage = ({ set }) => {
 
     return (
         <>
-            <h1>Login Page</h1>
+            <h1>LoginPage</h1>
             <hr />
 
             <pre aria-label="pre">
